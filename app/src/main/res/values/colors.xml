@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="purple_200">#FFFF</color>
+    <color name="purple_500">#013B8A</color>
+    <color name="purple_700">#013B8A</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="rosa">#ff7987 </color>
+    <color name="pink">#9A00BCD4</color>
+    <color name="light_blue">#4000BCD4</color>
+    <color name="back_color">#13253D</color>
+    <color name="bot_back_color">#203757</color>
+    <color name="user_back_color">#6965FF</color>
+    <color name="fab_color">#6B6AFF</color>
+    <color name="primary">#00BCD4</color>
+    <color name="primary_dark">#0097A7</color>
+    <color name="primary_light">#B2EBF2</color>
+    <color name="accent">#FF4081</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="gray">#888</color>
+    <color name="blue">#0000FF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color1">#FFFFFF</color>
+    <color name="color2">#70bcaa</color>
+    <color name="color3">#510375</color>
+    <color name="color4">#8C510375</color>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chatbot">
+    <!-- Permisos alarma/ calendario-->
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- MAKE ALARMS RESTART ON REBOOT -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/asistentev2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/asistentev2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight">
+        <activity android:name="com.example.chatbot.actividades.tareas.TareasActivity" />
+        <activity android:name=".actividades.asistente.AsistenteActivity" />
+        <activity android:name="com.example.chatbot.actividades.alarma.AlarmaActivity"/>
+        <activity android:name="com.example.chatbot.actividades.calendario.CalendarioActivity"/>
+
+        <activity
+            android:name=".actividades.notas.AddEditItemActivity"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".actividades.notas.NotasActivity">
+        </activity>
+
+
+        <activity android:name="com.example.chatbot.actividades.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.example.chatbot.actividades.MainActivity" />
+
+
+        <activity
+            android:name=".actividades.agenda.NuevoActivity"
+            android:parentActivityName=".actividades.agenda.AgendaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".actividades.agenda.AgendaActivity" />
+        </activity>
+        <activity android:name=".actividades.agenda.AgendaActivity">
+        </activity>
+
+        <activity
+            android:name=".actividades.agenda.VerActivity"
+            android:parentActivityName=".actividades.agenda.AgendaActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".actividades.agenda.AgendaActivity" />
+        </activity>
+
+        <activity
+            android:name=".actividades.agenda.EditarActivity"
+            android:parentActivityName=".actividades.agenda.AgendaActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".actividades.agenda.AgendaActivity" />
+        </activity>
+        <activity android:name="com.example.chatbot.actividades.calendario.EventEditActivity"/>
+        <activity android:name="com.example.chatbot.actividades.calendario.WeekViewActivity" />
+
+
+        <!--aaaa-->
+        <activity android:name=".actividades.alarma.AddEditAlarmActivity" />
+
+        <activity
+            android:name="com.example.chatbot.actividades.alarma.AlarmLandingPageActivity"
+            android:theme="@style/AlertLandingPageTheme" />
+
+        <service android:name=".actividades.alarma.LoadAlarmsService" />
+
+        <receiver android:name=".actividades.alarma.LoadAlarmsReceiver" />
+
+        <receiver android:name=".actividades.alarma.AlarmReceiver" />
+
+        <receiver android:name=".actividades.alarma.BootReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+
+
+</manifest>

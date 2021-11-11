@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_add_edit_item_2"
+    android:orientation="vertical"
+    tools:context=".actividades.notas.AddEditItemActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5_dp"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:layout_marginEnd="@dimen/dimen_5_dp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_add_edit_item"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10_dp">
+
+            <EditText
+                android:id="@+id/edit_text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/color1"
+                android:hint="@string/edit_text_title_hint"
+                android:shadowColor="@color/color1"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/color1"
+                android:textColorHint="@color/black"
+                android:textColorLink="@color/color1"
+                android:textCursorDrawable="@color/black"
+                android:textSize="@dimen/dimen_30_sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5_dp"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:layout_marginEnd="@dimen/dimen_5_dp"
+            android:layout_marginBottom="@dimen/dimen_5_dp"
+            android:layout_weight="6"
+            android:background="@drawable/layout_add_edit_item"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10_dp">
+
+            <EditText
+                android:id="@+id/edit_text_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/color1"
+                android:hint="@string/edit_text_description_hint"
+                android:shadowColor="@color/color1"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/color1"
+                android:textColorHint="@color/black"
+                android:textColorLink="@color/color1"
+                android:textCursorDrawable="@color/black"
+                android:textSize="@dimen/dimen_20_sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
